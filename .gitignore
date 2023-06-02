@@ -1,1 +1,16 @@
 config.inc.php
+ERROR_LOG_FILE
+game/ERROR_LOG_FILE
+config.inc.php
+game/tmpsec/
+game/maps/
+game/logs/
+game/sig_tmp/
+supportcenter/actionlog
+game/logs/daily.log
+game/mapcounter.txt
+game/maps/images/galaxy_detail.png
+game/maps/images/galaxy_detail_small.png
+game/kurs/*.png
+game/maps/images/galaxy_detail_small.png
+game/maps/images/galaxy_detail.png
