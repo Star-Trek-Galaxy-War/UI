@@ -48,7 +48,8 @@ class sql {
 
     var $d_query = array();
 
-    function sql($connection, $database, $user, $password = '') {
+    //function sql($connection, $database, $user, $password = '') {
+    function __construct($connection, $database, $user, $password = '') {
     	$server = strtok($connection, ':');
     	$port = strtok(':');
         $this->login = array(
