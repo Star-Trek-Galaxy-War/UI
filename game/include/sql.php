@@ -132,13 +132,14 @@ class sql {
 
         $query_mode = ($unbuffered) ? MYSQLI_USE_RESULT : MYSQLI_STORE_RESULT;
 
-        $start_time = time() + microtime();
+        $start_time = ( microtime(true) );
 
         if(!$this->query_id = @mysqli_query($this->link_id, $query, $query_mode)) {
             return $this->raise_error(false, false, $query);
         }
 
-        $total_time = (time() + microtime()) - $start_time;
+        //$total_time = (time() + microtime()) - $start_time;
+        $total_time = ( microtime(true) ) - $start_time;
 
         if($this->debug) {
             $this->d_query[] = array(
