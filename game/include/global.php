@@ -22,7 +22,7 @@
 
 
 
-include_once('/home/admin/config.inc.php');
+include_once(dirname(__FILE__) . '/../../config.inc.php');
 
 // Line break
 
